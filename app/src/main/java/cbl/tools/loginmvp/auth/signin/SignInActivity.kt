@@ -2,7 +2,7 @@ package cbl.tools.loginmvp.auth.signin
 
 import android.os.Bundle
 import cbl.tools.loginmvp.R
-import cbl.tools.loginmvp.BaseActivity
+import cbl.tools.loginmvp.common.BaseActivity
 
 class SignInActivity : BaseActivity(), ISignInView {
     private lateinit var presenter: ISignInPresenter<ISignInView, ISignInInteractor>

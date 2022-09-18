@@ -1,8 +1,8 @@
 package cbl.tools.loginmvp.auth.signin
 
 import cbl.tools.loginmvp.R
-import cbl.tools.loginmvp.BasePresenter
-import cbl.tools.loginmvp.IBasePresenter
+import cbl.tools.loginmvp.common.BasePresenter
+import cbl.tools.loginmvp.common.IBasePresenter
 import cbl.tools.loginmvp.util.StringUtil
 
 interface ISignInPresenter<V : ISignInView, I : ISignInInteractor> : IBasePresenter<V, I> {

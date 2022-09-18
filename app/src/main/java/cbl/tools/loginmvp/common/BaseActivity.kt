@@ -1,4 +1,4 @@
-package cbl.tools.loginmvp
+package cbl.tools.loginmvp.common
 
 import androidx.appcompat.app.AppCompatActivity
 

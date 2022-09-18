@@ -1,6 +1,6 @@
 package cbl.tools.loginmvp.auth.signin
 
-import cbl.tools.loginmvp.IBaseView
+import cbl.tools.loginmvp.common.IBaseView
 
 interface ISignInView : IBaseView {
     fun showEmailErrorMsg(msg: String)

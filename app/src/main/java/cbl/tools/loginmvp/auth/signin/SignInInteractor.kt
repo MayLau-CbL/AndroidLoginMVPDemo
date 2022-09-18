@@ -1,7 +1,7 @@
 package cbl.tools.loginmvp.auth.signin
 
-import cbl.tools.loginmvp.BaseInteractor
-import cbl.tools.loginmvp.IBaseInteractor
+import cbl.tools.loginmvp.common.BaseInteractor
+import cbl.tools.loginmvp.common.IBaseInteractor
 
 interface ISignInInteractor : IBaseInteractor {
     fun signInByEmail(email:String, pwd:String):Result<String?>
