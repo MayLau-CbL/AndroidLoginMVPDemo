@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LoginMVP</string>
+
+    <string name="common_network_fail">Network fail. Please try again.</string>
+
+    <string name="sign_in_incorrect_email">Incorrect Email</string>
+    <string name="sign_in_incorrect_pwd">Incorrect Password</string>
+    <string name="sign_in_success">SignIn Success</string>
+    <string name="sign_in_failure">Incorrect login information</string>
+
+    <string name="sign_in_forget_password_success">Reset password link is sent to your email</string>
+    <string name="sign_in_forget_password_failure">Incorrect information</string>
+
+</resources>
