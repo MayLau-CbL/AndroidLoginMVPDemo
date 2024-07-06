@@ -30,11 +30,11 @@ jobs:
         echo $ANDROID_KEYSTORE | base64 --decode > keystore.jks
 
     - name: Build Release apk
-        env:
-          RELEASE_KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          RELEASE_KEYSTORE_ALIAS: ${{ secrets.KEYSTORE_ALIAS }}
-          RELEASE_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-        run: ./gradlew assembleRelease --stacktrace
+      env:
+        RELEASE_KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+        RELEASE_KEYSTORE_ALIAS: ${{ secrets.KEYSTORE_ALIAS }}
+        RELEASE_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+      run: ./gradlew assembleRelease --stacktrace
 
     # - name: Build APK
     #   run: ./gradlew assembleRelease
