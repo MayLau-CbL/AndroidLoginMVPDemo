@@ -36,6 +36,11 @@ jobs:
         RELEASE_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
       run: ./gradlew assembleRelease --stacktrace
 
+    - name: Get release file apk path
+      id: releaseApk
+      run: echo "apkfile=$(find app/build/outputs/apk/release/*.apk)" >> $GITHUB_OUTPUT
+
+
     # - name: Build APK
     #   run: ./gradlew assembleRelease
 
@@ -50,4 +55,4 @@ jobs:
         appId: ${{ secrets.FIREBASE_APP_ID }}
         token: ${{ secrets.FIREBASE_TOKEN }}
         groups: testers
-        file: app/build/outputs/apk/release/app-release.apk
+        file: ${{ steps.releaseApk.outputs.apkfile }}
