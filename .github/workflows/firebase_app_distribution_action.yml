@@ -16,6 +16,12 @@ jobs:
       with:
         distribution: 'zulu'
         java-version: '17'
+    
+    - name: Set up Android SDK
+      uses: android-actions/setup-android@v2
+      with:
+        api-level: 34
+        build-tools: 35.0.0
 
     - name: Download Dependencies
       run: ./gradlew build
