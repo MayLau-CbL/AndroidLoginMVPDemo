@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "968655430645",
+    "project_id": "login-mvp-workflow",
+    "storage_bucket": "login-mvp-workflow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968655430645:android:925797e56484b1803036bc",
+        "android_client_info": {
+          "package_name": "cbl.tools.loginmvp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPXretVaHIXsPdzgKKxoRwNX2KLkc37jM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
